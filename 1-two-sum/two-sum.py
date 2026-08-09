@@ -12,4 +12,4 @@ class Solution(object):
                 return [seen[diff],i]
                 
             seen[nums[i]]=i
-        return [-1,-1]
+        return []

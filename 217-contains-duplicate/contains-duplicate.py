@@ -4,11 +4,10 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
-        hashmap={}
+        seen=set()
         for i in nums:
-            hashmap[i]= hashmap.get(i,0)+1
-        for v in hashmap.values():
-            if v>1:
+            if i in seen:
                 return True
-        return False        
-        
+            seen.add(i)
+        return False
+            

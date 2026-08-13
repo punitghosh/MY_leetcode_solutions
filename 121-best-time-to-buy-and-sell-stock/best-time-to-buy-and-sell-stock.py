@@ -9,7 +9,7 @@ class Solution(object):
         for i in range(len(prices)):
             price = prices[i]
             
-            if price < min_prices:
+            if min_prices > price:
                 min_prices = price
             
             profit = price - min_prices
